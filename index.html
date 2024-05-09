@@ -30,26 +30,17 @@
             bottom: 0;
             width: 100%;
         }
-        .content {
-            display: none;
+        .project {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow: hidden;
         }
-        .collapsible {
-            cursor: pointer;
-            user-select: none;
-        }
-        .collapsible::after {
-            content: '\25B6'; /* Unicode character for right-pointing triangle */
-            font-size: 0.8em;
-            display: inline-block;
-            margin-left: 5px;
-        }
-        .active::after {
-            content: '\25BC'; /* Unicode character for down-pointing triangle */
-        }
-        .file-embed {
-            width: 100%;
-            height: 500px; /* Adjust height as needed */
-            border: none;
+        .project img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -59,22 +50,18 @@
     </header>
     <main>
         <h2>About Me</h2>
-        <p>Check out some of my projects during my academic, autonomous and corporative career </p>
+        <p>Check out some of my projects during my academic, autonomous and corporate career.</p>
         <h2>Projects</h2>
         <ul>
-            <li>
-                <span class="collapsible">Ionosphere Simulation</span>
-                <div class="content">
-                    <!-- Embed specific file from GitHub repository -->
-                    <iframe class="file-embed" src="https://github.com/JAPine/Recent-Works/blob/main/PropDoen.py"></iframe>
-                </div>
+            <li class="project">
+                <h3>Ionosphere Simulation</h3>
+                <img src="ionosphere.jpg" alt="Ionosphere Simulation Image">
+                <p>This is the content for Ionosphere Simulation.</p>
             </li>
-            <li>
-                <span class="collapsible">Infectious Disease Outbreak Simulation</span>
-                <div class="content">
-                    <!-- Embed specific file from GitHub repository -->
-                    <iframe class="file-embed" src="https://github.com/YourUsername/YourRepository/blob/main/infectious_disease_simulation.ipynb"></iframe>
-                </div>
+            <li class="project">
+                <h3>Infectious Disease Outbreak Simulation</h3>
+                <img src="disease_outbreak.jpg" alt="Disease Outbreak Simulation Image">
+                <p>This is the content for Infectious Disease Outbreak Simulation.</p>
             </li>
             <!-- Add more projects as needed -->
         </ul>
@@ -82,24 +69,5 @@
     <footer>
         <p>&copy; 2024 Joel's Portfolio</p>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add event listeners to collapsible elements
-            var coll = document.getElementsByClassName('collapsible');
-            var i;
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    var content = this.nextElementSibling;
-                    if (content.style.display === 'block') {
-                        content.style.display = 'none';
-                    } else {
-                        content.style.display = 'block';
-                    }
-                });
-            }
-        });
-    </script>
 </body>
 </html>
