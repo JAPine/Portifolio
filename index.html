@@ -30,6 +30,22 @@
             bottom: 0;
             width: 100%;
         }
+        .content {
+            display: none;
+        }
+        .collapsible {
+            cursor: pointer;
+            user-select: none;
+        }
+        .collapsible::after {
+            content: '\25B6'; /* Unicode character for right-pointing triangle */
+            font-size: 0.8em;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .active::after {
+            content: '\25BC'; /* Unicode character for down-pointing triangle */
+        }
     </style>
 </head>
 <body>
@@ -41,13 +57,44 @@
         <p>Check out some of my projects during my academic, autonomous and corporative career </p>
         <h2>Projects</h2>
         <ul>
-            <li><a href="#">Ionosphere Simulation</a></li>
-            <li><a href="#">Infectious Disease Outbreak Simulation</a></li>
+            <li>
+                <span class="collapsible">Ionosphere Simulation</span>
+                <div class="content">
+                    <!-- Insert your code, images, text here -->
+                    <p>This is the content for Ionosphere Simulation.</p>
+                </div>
+            </li>
+            <li>
+                <span class="collapsible">Infectious Disease Outbreak Simulation</span>
+                <div class="content">
+                    <!-- Insert your code, images, text here -->
+                    <p>This is the content for Infectious Disease Outbreak Simulation.</p>
+                </div>
+            </li>
             <!-- Add more projects as needed -->
         </ul>
     </main>
     <footer>
         <p>&copy; 2024 Joel's Portfolio</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add event listeners to collapsible elements
+            var coll = document.getElementsByClassName('collapsible');
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    var content = this.nextElementSibling;
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
