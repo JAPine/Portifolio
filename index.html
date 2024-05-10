@@ -11,59 +11,59 @@
         <h1>Hi there. I'm Joel, welcome</h1>
     </header>
     <main>
-        <h2>About Me</h2>
-        <p>Explore a selection of projects I've undertaken throughout my academic, autonomous, and corporate journey.<br>
-            I've developed these projects through self-directed learning, showcasing my competence in adaptation and <br>
-            troubleshooting. </p>
-        <h2>Projects</h2>
-        <ul>
-            <li class="project">
-                <h3>Ionosphere Simulation</h3>
-                <div class="expand-icon" onclick="toggleContent(this)">+</div>
-                <!-- Project content to be expanded -->
-                <div class="project-content">
-                    <p>This code demonstrates the data treatment skills for:<br>
-                        <strong>Data Cleaning:</strong> It efficiently reads and processes data from external files, handling missing or incomplete 
-                        values through row padding.<br>
-                        <strong>Array Manipulation:</strong> It utilizes NumPy arrays to reshape and manipulate data, facilitating operations like 
-                        indexing and slicing for multidimensional data structures. <br>
-                        <strong>Statistical Analysis and Calculation:</strong> It performs statistical calculations such as mean and difference calculations to 
-                        derive parameters essential for further analysis.<br>
-                        <strong>Visualization:</strong> Through Matplotlib, it creates visually informative plots, applying color mapping and logarithmic normalization 
-                        to represent density data effectively.</p>
-                    <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
-                    <!-- Link to the Python script -->
-                    <p>Link to the Python script: <a href="https://github.com/JAPine/Recent-Works/blob/main/Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>
-                </div>
-            </li>
-            <li class="project">
-                <h3>Infectious Disease Outbreak Simulation</h3>
-                <div class="expand-icon" onclick="toggleContent(this)">+</div>
-                <!-- Project content to be expanded -->
-                <div class="project-content">
-                    <div class="image-container">
-                        <img src="Tempo1.png" alt="Initial state with 3 contained particles (red dots = infected and blue dots = non-infected)">
-                        <p>1</p>
-                        <img src="Tempo2.png" alt="A second stage with the outbreak ongoing (now the green dots are the particles who recovered from the disease)">
-                        <p>2</p>
-                        <img src="Tempo3.png" alt="Now the final stage is coming where the recovered dots (in green) create a 'herd immunity' protecting the remaining blue dots">
-                        <p>3</p>
+        <div class="content-frame">
+            <h2>About Me</h2>
+            <p>Explore a selection of projects I've undertaken throughout my academic, autonomous, and corporate journey.<br>
+                I've developed these projects through self-directed learning, showcasing my competence in adaptation and <br>
+                troubleshooting.</p>
+        </div>
+        <div class="content-frame">
+            <h2>Projects</h2>
+            <ul>
+                <li class="project">
+                    <h3>Ionosphere Simulation</h3>
+                    <div class="expand-icon" onclick="toggleContent(this)">+</div>
+                    <!-- Project content to be expanded -->
+                    <div class="project-content">
+                        <p>This code demonstrates the data treatment skills for:<br>
+                            <strong>Data Cleaning:</strong> It efficiently reads and processes data from external files, handling missing or incomplete 
+                            values through row padding.<br>
+                            <strong>Array Manipulation:</strong> It utilizes NumPy arrays to reshape and manipulate data, facilitating operations like 
+                            indexing and slicing for multidimensional data structures. <br>
+                            <strong>Statistical Analysis and Calculation:</strong> It performs statistical calculations such as mean and difference calculations to 
+                            derive parameters essential for further analysis.<br>
+                            <strong>Visualization:</strong> Through Matplotlib, it creates visually informative plots, applying color mapping and logarithmic normalization 
+                            to represent density data effectively.</p>
+                        <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
+                        <!-- Link to the Python script -->
+                        <p>Link to the Python script: <a href="https://github.com/JAPine/Recent-Works/blob/main/Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>
                     </div>
-                    <p>This Python script demonstrates my expertise in data analysis and modelling, particularly in infectious disease outbreak simulation. Employing Pygame<br>
-                        and NumPy libraries, it simulates disease spread in a 2D environment, with particles representing individuals interacting through collisions that may<br> 
-                            transmit the disease. The main code orchestrates particle movement, interactions, and infection dynamics while calling another script named "Dynamics"<br>
-                            for enhanced functionality. This showcases my proficiency in composing modular and scalable solutions for complex modeling tasks, exemplifying my skills<br>
-                        in data analysis and modelling domains.<br>
-                    The Figures above tell us the following store:<br>
-                        1-Initial state with 3 contained particles (red dots = infected and blue dots = non-infected)<br>
-                        2-A second stage with the outbreak ongoing (now the green dots are the particles that recovered from the disease)<br>
-                        3-Now the final stage is coming where the recovered dots (in green) create a 'herd immunity' protecting the remaining blue dots.</p>
-                    <p>Link to the Python script: <a href="https://github.com/JAPine/Recent-Works/blob/main/PropDoen.py">The main code: PropDoen.py</a><br>
-                    Link to Dynamics.py: <a href="https://github.com/JAPine/Recent-Works/blob/main/Dynamic.py">Dynamics.py</a></p>
-                </div>
-            </li>
-            <!-- Add more projects as needed -->
-        </ul>
+                </li>
+                <li class="project">
+                    <h3>Infectious Disease Outbreak Simulation</h3>
+                    <div class="expand-icon" onclick="toggleContent(this)">+</div>
+                    <!-- Project content to be expanded -->
+                    <div class="project-content">
+                        <p>This Python script demonstrates my expertise in data analysis and modelling, particularly in infectious disease outbreak simulation. Employing Pygame<br>
+                            and NumPy libraries, it simulates disease spread in a 2D environment, with particles representing individuals interacting through collisions that may<br> 
+                                transmit the disease. The main code orchestrates particle movement, interactions, and infection dynamics while calling another script named "Dynamics"<br>
+                                for enhanced functionality. This showcases my proficiency in composing modular and scalable solutions for complex modeling tasks, exemplifying my skills<br>
+                            in data analysis and modeling domains.</p>
+                        <div class="image-container">
+                            <img src="Tempo1.png" alt="Initial state with 3 contained particles (red dots = infected and blue dots = non-infected)">
+                            <img src="Tempo2.png" alt="A second stage with the outbreak ongoing (now the green dots are the particles who recovered from the disease)">
+                            <img src="Tempo3.png" alt="Now the final stage is coming where the recovered dots (in green) create a 'herd immunity' protecting the remaining blue dots">
+                        </div>
+                        <p>The Figures above tell us the following story:<br>
+                            1-Initial state with 3 contained particles (red dots = infected and blue dots = non-infected)<br>
+                            2-A second stage with the outbreak ongoing (now the green dots are the particles that recovered from the disease)<br>
+                            3-Now the final stage is coming where the recovered dots (in green) create a 'herd immunity' protecting the remaining blue dots.</p>
+                        <p>Link to the Python script: <a href="https://github.com/JAPine/Recent-Works/blob/main/PropDoen.py">The main code: PropDoen.py</a><br>
+                        Link to Dynamics.py: <a href="https://github.com/JAPine/Recent-Works/blob/main/Dynamic.py">Dynamics.py</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Joel's Portfolio <br>Email:joanfepi9@gmail.com</p>
