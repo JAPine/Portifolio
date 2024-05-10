@@ -34,14 +34,9 @@
             margin-bottom: 20px;
             border: 1px solid #ccc;
             padding: 10px;
+            position: relative;
         }
         .project img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        .project video {
             max-width: 100%;
             height: auto;
             display: block;
@@ -55,6 +50,19 @@
             cursor: pointer;
             text-align: center;
             margin-bottom: 10px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid black;
+        }
+        .expanded .expand-icon {
+            border-top: none;
+            border-bottom: 10px solid black;
         }
         .expanded .project-content {
             display: block;
@@ -88,7 +96,7 @@
                 <!-- Link to the Python script -->
                 <p>Link to the Python script: <a href="https://github.com/JAPine/Recent-Works/blob/main/Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>
                 <!-- Expand icon/button -->
-                <div class="expand-icon" onclick="toggleContent(this)">Expand</div>
+                <div class="expand-icon" onclick="toggleContent(this)"></div>
                 <!-- Project content to be expanded -->
                 <div class="project-content">
                     <p>This is the detailed content of the Ionosphere Simulation project.</p>
