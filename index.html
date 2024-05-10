@@ -79,17 +79,15 @@
         .expanded .project-content {
             display: block;
         }
-        .image-container {
+        .pdf-container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 20px;
         }
-        .image-container img {
-            width: 30%;
-            height: auto;
-        }
-        .centered-image {
-            text-align: center;
+        .pdf-container embed {
+            width: 80%;
+            height: 500px;
         }
     </style>
 </head>
@@ -128,10 +126,10 @@
                 <div class="expand-icon" onclick="toggleContent(this)">+</div>
                 <!-- Project content to be expanded -->
                 <div class="project-content">
-                    <div class="image-container">
-                        <img src="Tela-4-eps-converted-to.pdf" alt="Disease Outbreak Simulation Image">
-                        <img src="Tela-10-eps-converted-to.pdf" alt="Second Image">
-                        <img src="Tela-20-eps-converted-to.pdf" alt="Third Image">
+                    <div class="pdf-container">
+                        <embed src="Tela4-eps-converted-to.pdf" type="application/pdf" width="500" height="600">
+                        <embed src="Tela10-eps-converted-to.pdf" type="application/pdf" width="500" height="600">
+                        <embed src="Tela20-eps-converted-to.pdf" type="application/pdf" width="500" height="600">
                     </div>
                     <p>This Python script demonstrates my expertise in data analysis and modelling, particularly in infectious disease outbreak simulation. Employing Pygame<br>
                         and NumPy libraries, it simulates disease spread in a 2D environment, with particles representing individuals interacting through collisions that may<br> 
