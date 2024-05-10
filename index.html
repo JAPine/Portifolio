@@ -51,7 +51,12 @@
             display: none;
             padding: 10px;
         }
-        .project-content.show {
+        .expand-icon {
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .expanded .project-content {
             display: block;
         }
     </style>
@@ -82,9 +87,9 @@
                 <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
                 <!-- Link to the Python script -->
                 <p>Link to the Python script: <a href="https://github.com/JAPine/Recent-Works/blob/main/Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>
-                <!-- Button to toggle project content -->
-                <button class="toggle-button" onclick="toggleProjectContent(this)">Toggle Content</button>
-                <!-- Project content to be toggled -->
+                <!-- Expand icon/button -->
+                <div class="expand-icon" onclick="toggleContent(this)">Expand</div>
+                <!-- Project content to be expanded -->
                 <div class="project-content">
                     <p>This is the detailed content of the Ionosphere Simulation project.</p>
                 </div>
@@ -101,11 +106,10 @@
         <p>&copy; 2024 Joel's Portfolio</p>
     </footer>
 
-    <!-- JavaScript for toggling project content -->
     <script>
-        function toggleProjectContent(button) {
-            var projectContent = button.parentElement.querySelector('.project-content');
-            projectContent.classList.toggle('show');
+        function toggleContent(icon) {
+            var project = icon.closest('.project');
+            project.classList.toggle('expanded');
         }
     </script>
 </body>
