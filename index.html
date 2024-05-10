@@ -34,7 +34,6 @@
             margin-bottom: 20px;
             border: 1px solid #ccc;
             padding: 10px;
-            overflow: hidden;
         }
         .project img {
             max-width: 100%;
@@ -48,21 +47,29 @@
             display: block;
             margin: 0 auto;
         }
+        .project-content {
+            display: none;
+            padding: 10px;
+        }
+        .project-content.show {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Hi there. I'm Joel, welcome</h1>
     </header>
     <main>
         <h2>About Me</h2>
-        <p>Check out some of my projects during my academic, autonomous, and corporate career.</p>
+        <p>Explore a selection of projects I've undertaken throughout my academic, autonomous, and corporate journey.<br>
+            I've developed these projects through self-directed learning, showcasing my competence in adaptation and <br>
+            troubleshooting. </p>
         <h2>Projects</h2>
         <ul>
             <li class="project">
-                 <h3>Ionosphere Simulation</h3>
-                <!-- <img src="ionosphere.jpg" alt="Ionosphere Simulation Image"-->
-                 <p>This code demonstrates the data treatment for data analysis and data science:<br>
+                <h3>Ionosphere Simulation</h3>
+                <p>This code demonstrates the data treatment for data analysis and data science:<br>
                     Data Cleaning: It efficiently reads and processes data from external files, handling missing or incomplete 
                     values through row padding.<br>
                     Array Manipulation: It utilizes NumPy arrays to reshape and manipulate data, facilitating operations like 
@@ -71,10 +78,16 @@
                     derive parameters essential for further analysis.<br>
                     Visualization: Through Matplotlib, it creates visually informative plots, applying color mapping and logarithmic normalization 
                     to represent density data effectively.</p>
-                 <!-- Embed YouTube video using iframe -->
-                 <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
-                 <!-- Link to the Python script -->
+                <!-- Embed YouTube video using iframe -->
+                <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
+                <!-- Link to the Python script -->
                 <p>Link to the Python script: <a href="https://github.com/JAPine/Recent-Works/blob/main/Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>
+                <!-- Button to toggle project content -->
+                <button class="toggle-button" onclick="toggleProjectContent(this)">Toggle Content</button>
+                <!-- Project content to be toggled -->
+                <div class="project-content">
+                    <p>This is the detailed content of the Ionosphere Simulation project.</p>
+                </div>
             </li>
             <li class="project">
                 <h3>Infectious Disease Outbreak Simulation</h3>
@@ -87,5 +100,13 @@
     <footer>
         <p>&copy; 2024 Joel's Portfolio</p>
     </footer>
+
+    <!-- JavaScript for toggling project content -->
+    <script>
+        function toggleProjectContent(button) {
+            var projectContent = button.parentElement.querySelector('.project-content');
+            projectContent.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
