@@ -35,6 +35,16 @@
             border: 1px solid #ccc;
             padding: 10px;
             position: relative;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .project:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .project h3 {
+            margin-top: 0;
         }
         .project img {
             max-width: 100%;
@@ -49,20 +59,21 @@
         .expand-icon {
             cursor: pointer;
             text-align: center;
-            margin-bottom: 10px;
             position: absolute;
             bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-top: 10px solid black;
+            width: 20px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 50%;
+            color: #fff;
+            line-height: 20px;
+            text-align: center;
         }
         .expanded .expand-icon {
-            border-top: none;
-            border-bottom: 10px solid black;
+            bottom: auto;
+            top: 10px;
         }
         .expanded .project-content {
             display: block;
@@ -81,33 +92,33 @@
         <h2>Projects</h2>
         <ul>
             <li class="project">
-                <h3>Ionosphere Simulation</h3><div class="expand-icon" onclick="toggleContent(this)"></div>
+                <h3>Ionosphere Simulation</h3>
+                <div class="expand-icon" onclick="toggleContent(this)">+</div>
                 <!-- Project content to be expanded -->
-                 <div class="project-content">
-                <p>This code demonstrates the data treatment for data analysis and data science:<br>
-                    Data Cleaning: It efficiently reads and processes data from external files, handling missing or incomplete 
-                    values through row padding.<br>
-                    Array Manipulation: It utilizes NumPy arrays to reshape and manipulate data, facilitating operations like 
-                    indexing and slicing for multidimensional data structures. <br>
-                    Statistical Analysis and Calculation: It performs statistical calculations such as mean and difference calculations to 
-                    derive parameters essential for further analysis.<br>
-                    Visualization: Through Matplotlib, it creates visually informative plots, applying color mapping and logarithmic normalization 
-                    to represent density data effectively.</p>
-                <!-- Embed YouTube video using iframe -->
-                <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
-                <!-- Link to the Python script -->
-                <p>Link to the Python script: <a href="https://github.com/JAPine/Recent-Works/blob/main/Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>
-                <!-- Expand icon/button -->
-               
-                    <p>This is the detailed content of the Ionosphere Simulation project.</p>
+                <div class="project-content">
+                    <p>This code demonstrates the data treatment for data analysis and data science:<br>
+                        Data Cleaning: It efficiently reads and processes data from external files, handling missing or incomplete 
+                        values through row padding.<br>
+                        Array Manipulation: It utilizes NumPy arrays to reshape and manipulate data, facilitating operations like 
+                        indexing and slicing for multidimensional data structures. <br>
+                        Statistical Analysis and Calculation: It performs statistical calculations such as mean and difference calculations to 
+                        derive parameters essential for further analysis.<br>
+                        Visualization: Through Matplotlib, it creates visually informative plots, applying color mapping and logarithmic normalization 
+                        to represent density data effectively.</p>
+                    <!-- Embed YouTube video using iframe -->
+                    <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
+                    <!-- Link to the Python script -->
+                    <p>Link to the Python script: <a href="https://github.com/JAPine/Recent-Works/blob/main/Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>
                 </div>
             </li>
             <li class="project">
-                <h3>Infectious Disease Outbreak Simulation</h3><div class="expand-icon" onclick="toggleContent(this)"></div>
+                <h3>Infectious Disease Outbreak Simulation</h3>
+                <div class="expand-icon" onclick="toggleContent(this)">+</div>
                 <!-- Project content to be expanded -->
-                 <div class="project-content">
-                <img src="disease_outbreak.jpg" alt="Disease Outbreak Simulation Image">
-                <p>This is the content for Infectious Disease Outbreak Simulation.</p>
+                <div class="project-content">
+                    <img src="disease_outbreak.jpg" alt="Disease Outbreak Simulation Image">
+                    <p>This is the content for Infectious Disease Outbreak Simulation.</p>
+                </div>
             </li>
             <!-- Add more projects as needed -->
         </ul>
