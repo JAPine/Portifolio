@@ -79,6 +79,18 @@
         .expanded .project-content {
             display: block;
         }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 30%;
+            height: auto;
+        }
+        .centered-image {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -103,7 +115,7 @@
                         <strong>Array Manipulation:</strong> It utilizes NumPy arrays to reshape and manipulate data, facilitating operations like 
                         indexing and slicing for multidimensional data structures. <br>
                         <strong>Statistical Analysis and Calculation:</strong> It performs statistical calculations such as mean and difference calculations to 
-                        derive parameters essential for further analysis.<be>
+                        derive parameters essential for further analysis.<br>
                         <strong>Visualization:</strong> Through Matplotlib, it creates visually informative plots, applying color mapping and logarithmic normalization 
                         to represent density data effectively.</p>
                     <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
@@ -116,7 +128,11 @@
                 <div class="expand-icon" onclick="toggleContent(this)">+</div>
                 <!-- Project content to be expanded -->
                 <div class="project-content">
-                    <img src="disease_outbreak.jpg" alt="Disease Outbreak Simulation Image">
+                    <div class="image-container">
+                        <img src="Tela4-eps-converted-to.pdf" alt="Disease Outbreak Simulation Image">
+                        <img src="Tela10-eps-converted-to.pdf" alt="Second Image">
+                        <img src="Tela20-eps-converted-to.pdf" alt="Third Image">
+                    </div>
                     <p>This Python script demonstrates my expertise in data analysis and modelling, particularly in infectious disease outbreak simulation. Employing Pygame<br>
                         and NumPy libraries, it simulates disease spread in a 2D environment, with particles representing individuals interacting through collisions that may<br> 
                             transmit the disease. The main code orchestrates particle movement, interactions, and infection dynamics while calling another script named "Dynamics"<br>
