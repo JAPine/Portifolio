@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #330;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -30,7 +30,7 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #330;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -40,7 +40,7 @@ footer {
 }
 
 .content-frame {
-    background-color: rgba(255, 255, 255, 0.88); /* Increased transparency */
+    background-color: rgba(255, 255, 255, 0.95); /* Increased transparency */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -59,7 +59,7 @@ footer {
 }
 
 .project:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.85);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.95);
 }
 
 .project h3 {
