@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazilian GDP Analysis Report</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Define styles for column layout */
+        .column-layout {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        /* Style the "Conclusion" heading */
+        .conclusion-heading {
+            font-weight: bold;
+        }
+        /* Style for each column */
+        .column {
+            flex: 0 0 30%; /* Adjust the width of each column as needed */
+            margin-bottom: 20px; /* Add margin between columns */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brazilian GDP Analysis Report</h1>
+    </header>
+    <main>
+        <div class="content-frame">
+            <h2>Executive Summary</h2>
+            <p>This report provides a detailed analysis of the Brazilian Gross Domestic Product (GDP) across different sectors and regions. It includes statistical measures such as mean, variance, skewness, and kurtosis for Agriculture, Industry, Services, and Public Sector. Additionally, descriptive and diagnostic analyses are provided for each region, including Nordeste, Norte, Centro-Oeste, Sudeste, and Sul.</p>
+        </div>
+
+        <!-- Columns for text before Conclusion -->
+        <div class="column-layout">
+            <!-- Text before Conclusion -->
+            <div class="column">
+                <p>
+                    1. Statistical Analysis of Brazil's GDP (Agriculture, Industry, Services, Public Sector)<br>
+                    Summary Statistics:<br>
+                    Agriculture:<br>
+                    Observations: 7<br>
+                    Min-Max: (81,515,198,966; 434,620,999,961)<br>
+                    Mean: 214,587,846,848.57<br>
+                    Variance: 1.57e+22<br>
+                    Skewness: 0.66<br>
+                    Kurtosis: -0.69<br>
+                    Industry:<br>
+                    Observations: 7<br>
+                    Min-Max: (334,907,570,007; 1,484,336,999,988)<br>
+                    Mean: 921,966,571,431.00<br>
+                    Variance: 1.69e+23<br>
+                    Skewness: -0.15<br>
+                    Kurtosis: -1.25
+                </p>
+            </div>
+            <div class="column">
+                <p>
+                  Agriculture Percentage:<br>
+
+                  Mean: 8.08
+                  Variance: 2.00
+                  Skewness: -0.09
+                  Kurtosis: -1.55
+                  Industry Percentage:
+
+                  Mean: 21.09
+                  Variance: 3.57
+                  Skewness: -0.20
+                  Kurtosis: -1.80
+                  Services Percentage:
+
+                  Mean: 46.36
+                  Variance: 6.14
+                  Skewness: 0.46
+                  Kurtosis: -1.23
+                  Public Sector Percentage:
+
+                  Mean: 24.47
+                  Variance: 0.84
+                  Skewness: 0.49
+                  Kurtosis: -0.77
+                  Diagnostic Analysis:
+                  Agriculture sector shows moderate variability and a fairly normal distribution.
+                  Industry sector has moderate variability and slight negative skewness, indicating a longer left tail.
+                  Services sector shows high variability and slight positive skewness, suggesting a longer right tail.
+                  Public Sector exhibits low variability and slight positive skewness.
+                  Norte:
+                  Agriculture Percentage:
+                  
+                  Mean: 9.56
+                  Variance: 0.95
+                  Skewness: -0.71
+                  Kurtosis: -0.70
+                  Industry Percentage:
+                  
+                  Mean: 28.97
+                  Variance: 8.16
+                  Skewness: 0.56
+                  Kurtosis: -1.15
+                  Services Percentage:
+                  
+                  Mean: 37.21
+                  Variance: 4.19
+                  Skewness: -0.66
+                  Kurtosis: -1.03  
+                  
+                </p>
+            </div>
+            <div class="column">
+                Public Sector Percentage:
+                
+                Mean: 24.26
+                Variance: 0.93
+                Skewness: -0.20
+                Kurtosis: -0.32
+                Diagnostic Analysis:
+                Agriculture sector has low variability and slight negative skewness.
+                Industry sector shows high variability and moderate positive skewness.
+                Services sector has moderate variability and slight negative skewness.
+                Public Sector shows low variability and near-normal distribution.<br>
+              
+                <p class="conclusion-heading">Centro-Oeste:</p>
+                Agriculture Percentage:
+                
+                Mean: 10.86
+                Variance: 2.89
+                Skewness: 1.59
+                Kurtosis: 1.01
+                Industry Percentage:
+                
+                Mean: 15.91
+                Variance: 1.15
+                Skewness: -0.69
+                Kurtosis: -0.29
+                Services Percentage:
+                
+                Mean: 45.64
+                Variance: 3.75
+                Skewness: 0.35
+                Kurtosis: -1.42
+                Public Sector Percentage:
+                
+                Mean: 27.58
+                Variance: 1.00
+                Skewness: -0.73
+                Kurtosis: -0.92
+                Diagnostic Analysis:
+                Agriculture sector shows high variability and strong positive skewness.
+                Industry sector has low variability and moderate negative skewness.
+                Services sector exhibits moderate variability and slight positive skewness.
+                Public Sector shows low variability and slight negative skewness.
+                Mean: 27.47
+Variance: 4.80
+Skewness: -0.17
+Kurtosis: -1.65
+Services Percentage:
+
+Mean: 50.08
+Variance: 2.93
+Skewness: 0.05
+Kurtosis: -1.15
+Public Sector Percentage:
+
+Mean: 13.32
+Variance: 0.53
+Skewness: 0.37
+Kurtosis: -1.41
+Diagnostic Analysis:
+Agriculture sector shows moderate variability and slight positive skewness.
+Industry sector exhibits moderate variability and near-normal distribution.
+Services sector has low variability and near-normal distribution.
+Public Sector shows very low variability and slight positive skewness.
+                </p>
+            </div>
+        </div>
+
+        <!-- Conclusion -->
+        <p class="conclusion-heading">Conclusion:</p>
+        <p>
+            The statistical and diagnostic analyses reveal significant variations in the GDP composition across Brazil's regions. 
+            While agriculture is a crucial sector in the Centro-Oeste and Norte regions, the Sudeste and Sul regions have a 
+            stronger emphasis on industry and services. The public sector maintains a relatively stable contribution across 
+            all regions, with slight variations in its percentage share. These insights can help policymakers and economists tailor 
+            regional development strategies to harness each region's strengths and address its unique challenges.
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Joel's Portfolio</p>
+    </footer>
+</body>
+</html>
