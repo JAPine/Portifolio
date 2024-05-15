@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #332;
+    background-color: #334;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -29,7 +29,7 @@ main {
 }
 
 footer {
-    background-color: #332;
+    background-color: #334;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -86,7 +86,7 @@ footer {
     transform: translateX(-50%);
     width: 20px;
     height: 20px;
-    background-color: #338;
+    background-color: #334;
     border-radius: 50%;
     color: #fff;
     line-height: 20px;
