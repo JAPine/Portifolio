@@ -39,7 +39,7 @@ footer {
 }
 
 .content-frame {
-    background-color: rgba(255, 255, 255, 0.15); /* Increased transparency */
+    background-color: rgba(255, 255, 255, 1.15); /* Increased transparency */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -53,7 +53,7 @@ footer {
     position: relative;
     background-color: #fff;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(10, 10, 10, 0.5);
     transition: box-shadow 0.3s ease;
 }
 
