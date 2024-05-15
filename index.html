@@ -19,157 +19,93 @@
         <main>
             <div class="content-frame">
                 <h2>About Me</h2>
-                <p>Passionate about statistics and data, I have succeded in managing analytical procedures. My journey spreads across academia, self-directed 
+                <p>Passionate about statistics and data, I have succeeded in managing analytical procedures. My journey spreads across academia, self-directed 
                 learning, and corporate environments, where I've undertaken a diverse range of projects. Make yourself comfortable to take a look at scripts with statistical analyses 
                 and data visualization techniques. </p>
-        </div>
-        <div class="content-frame">
-            <h2>Projects</h2>
-            <ul>
-                <li class="project">
-                    <h3>Ionosphere Simulation</h3>
-                    <div class="expand-icon" onclick="toggleContent(this)">+</div>
-                    <!-- Project content to be expanded -->
-                    <div class="project-content">
-                        <p>This code demonstrates the data treatment skills for:<br>
-                            <strong>Data Cleaning:</strong> It efficiently reads and processes data from external files, handling missing or incomplete 
-                            values through row padding.<br>
-                            <strong>Array Manipulation:</strong> It utilizes NumPy arrays to reshape and manipulate data, facilitating operations like 
-                            indexing and slicing for multidimensional data structures. <br>
-                            <strong>Statistical Analysis and Calculation:</strong> It performs statistical calculations such as mean and difference calculations to 
-                            derive parameters essential for further analysis.<br>
-                            <strong>Visualization:</strong> Through Matplotlib, it creates visually informative plots, applying color mapping and logarithmic normalization 
-                            to represent density data effectively.</p>
-                        <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
-                        <!-- Link to the Python script -->
-                        <p>Link to the Python script: <a href="Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>                
-                </li>
-                <li class="project">
-                    <h3>Infectious Disease Outbreak Simulation</h3>
-                    <div class="expand-icon" onclick="toggleContent(this)">+</div>
-                    <!-- Project content to be expanded -->
-                    <div class="project-content">
-                        <p>This Python script demonstrates my expertise in data analysis and modelling, particularly in infectious disease outbreak simulation. Employing Pygame<br>
-                            and NumPy libraries, it simulates disease spread in a 2D environment, with particles representing individuals interacting through collisions that may<br> 
-                                transmit the disease. The main code orchestrates particle movement, interactions, and infection dynamics while calling another script named "Dynamics"<br>
-                                for enhanced functionality. This showcases my proficiency in composing modular and scalable solutions for complex modelling tasks, exemplifying my skills<br>
-                            in data analysis and modelling domains.</p>
-                        <div class="image-container">
-                            <img src="Tempo1.png" alt="Initial state with 3 contained particles (red dots = infected and blue dots = non-infected)" style="width: 290px;">
-                            <img src="Tempo2.png" alt="A second stage with the outbreak ongoing (now the green dots are the particles who recovered from the disease)" style="width: 290px;">
-                            <img src="Tempo3.png" alt="Now the final stage is coming where the recovered dots (in green) create a 'herd immunity' protecting the remaining blue dots" style="width: 290px;">
+            </div>
+            <div class="content-frame">
+                <h2>Projects</h2>
+                <ul>
+                    <li class="project">
+                        <h3>Ionosphere Simulation</h3>
+                        <div class="expand-icon" onclick="toggleContent(this)">+</div>
+                        <!-- Project content to be expanded -->
+                        <div class="project-content">
+                            <p>This code demonstrates the data treatment skills for:<br>
+                                <strong>Data Cleaning:</strong> It efficiently reads and processes data from external files, handling missing or incomplete 
+                                values through row padding.<br>
+                                <strong>Array Manipulation:</strong> It utilizes NumPy arrays to reshape and manipulate data, facilitating operations like 
+                                indexing and slicing for multidimensional data structures. <br>
+                                <strong>Statistical Analysis and Calculation:</strong> It performs statistical calculations such as mean and difference calculations to 
+                                derive parameters essential for further analysis.<br>
+                                <strong>Visualization:</strong> Through Matplotlib, it creates visually informative plots, applying color mapping and logarithmic normalization 
+                                to represent density data effectively.</p>
+                            <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
+                            <!-- Link to the Python script -->
+                            <p>Link to the Python script: <a href="Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>                
                         </div>
-                        <p>The Figures above tell us the following story:<br>
-                            1-Initial state with 3 contained particles (red dots = infected and blue dots = non-infected)<br>
-                            2-A second stage with the outbreak ongoing (now the green dots are the particles that recovered from the disease)<br>
-                            3-Now the final stage is coming where the recovered dots (in green) create a 'herd immunity' protecting the remaining blue dots.</p>
-                        <p>Link to the main code: : <a href="https://github.com/JAPine/Recent-Works/blob/main/PropDoen.py">PropDoen.py</a><br>
-                        Link to Dynamics code: <a href="https://github.com/JAPine/Recent-Works/blob/main/Dynamic.py">Dynamics.py</a></p>
-                    </div>
-                </li>
-                <li class="project">
-                    <h3>Brazilian GDP Analysis over the years</h3>
-                    <div class="expand-icon" onclick="toggleContent(this)">+</div>
-                    <div class="project-content">
-                        <div class="image-container">
-                            <img src="Per_Region_bar.png" alt="()" style="width: 890px; display: block;"><br>
-                            <img src="Sector_over_years.png" alt=" ()" style="width: 860px; display: block;">
-                        </div>
-                        <p>This is a descriptive and diagnostic analysis I made about Brazilian GDP over the years from 1985 up to 2020. 
-                            The data were obtained from IBGE through  'basedosdados' database on BigQuery.<br>
-                            <strong>Data Loading and Cleaning:</strong> The code loads multiple CSV files, concatenates them, and removes duplicates. <br>
-                            <strong>Regional Analysis:</strong> It defines Brazilian regions and filters the data accordingly.<br>
-                            <strong>Statistical Analysis:</strong> Uses scipy.stats.describe to perform a basic statistical analysis of the GDP data.<br> 
-                            <strong>Visualization:</strong> Plots GDP trends for Brazil as a whole and for individual regions, displaying the data as line plots and bar charts.<br>
-                            The Figures portrays:<br>
-                            1-Brazilian sectors' contribution of economic sectors' contribution over the years<br>
-                            2-Contributions from each political Brazilian region of each economic sector over the years in a percentual perspective.<p>
-                        <p>Click <a href="BR_GDP_report.html">here</a> to read the technical report on Brazilian GDP analysis.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </main>
+                    </li>
+                    <!-- Add more project items as needed -->
+                </ul>
+            </div>
+        </main>
+    </div>
     <div class="content" id="content-pt" style="display: none;">
         <header>
-        <h1>Olá. Eu sou o Joel, bem-vindo</h1>
-    </header>
-    <main>
-        <div class="content-frame">
-            <h2>Sobre Mim</h2>
-            <p>Apixonado por estatísticas e dados, tenho tido sucesso na gestão de procedimentos analíticos. Minha jornada se estende pela academia, aprendizado autodidata
-                e ambientes corporativos, onde realizei uma ampla gama de projetos. Fique à vontade para dar uma olhada em scripts com análises estatísticas
-                e técnicas de visualização de dados.</p>
-        </div>
-        <div class="content-frame">
-            <h2>Projetos</h2>
-            <ul>
-                <li class="project">
-                    <h3>Simulação da Ionosfera</h3>
-                    <div class="expand-icon" onclick="toggleContent(this)">+</div>
-                    <!-- Conteúdo do projeto a ser expandido -->
-                    <div class="project-content">
-                        <p>Este código demonstra as habilidades de tratamento de dados para:<br>
-                            <strong>Limpeza de Dados:</strong> Ele lê e processa eficientemente dados de arquivos externos, lidando com valores ausentes ou incompletos
-                            através do preenchimento de linhas.<br>
-                            <strong>Manipulação de Arrays:</strong> Ele utiliza arrays NumPy para remodelar e manipular dados, facilitando operações como
-                            indexação e fatiamento para estruturas de dados multidimensionais. <br>
-                            <strong>Análise Estatística e Cálculo:</strong> Ele realiza cálculos estatísticos como média e diferença para
-                            derivar parâmetros essenciais para análises adicionais.<br>
-                            <strong>Visualização:</strong> Através do Matplotlib, ele cria gráficos visualmente informativos, aplicando mapeamento de cores e normalização logarítmica
-                            para representar dados de densidade de forma eficaz.</p>
-                        <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
-                        <!-- Link para o script em Python -->
-                        <p>Link para o script em Python: <a href="Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>                
-                </li>
-                <li class="project">
-                    <h3>Simulação de Surto de Doenças Infecciosas</h3>
-                    <div class="expand-icon" onclick="toggleContent(this)">+</div>
-                    <!-- Conteúdo do projeto a ser expandido -->
-                    <div class="project-content">
-                        <p>Este script em Python demonstra minha expertise em análise de dados e modelagem, especialmente em simulação de surtos de doenças infecciosas. Utilizando as bibliotecas Pygame<br>
-                            e NumPy, ele simula a propagação da doença em um ambiente 2D, com partículas representando indivíduos interagindo através de colisões que podem<br> 
-                                transmitir a doença. O código principal orquestra o movimento das partículas, interações e dinâmica de infecção, enquanto chama outro script chamado "Dynamics"<br>
-                                para funcionalidade aprimorada. Isso demonstra minha proficiência em compor soluções modulares e escaláveis para tarefas de modelagem complexas, exemplificando minhas habilidades<br>
-                            em domínios de análise de dados e modelagem.</p>
-                        <div class="image-container">
-                            <img src="Tempo1.png" alt="Estado inicial com 3 partículas contidas (pontos vermelhos = infectados e pontos azuis = não infectados)" style="width: 290px;">
-                            <img src="Tempo2.png" alt="Um segundo estágio com o surto em andamento (agora os pontos verdes são as partículas que se recuperaram da doença)" style="width: 290px;">
-                            <img src="Tempo3.png" alt="Agora a fase final está chegando, onde os pontos recuperados (em verde) criam uma 'imunidade de rebanho' protegendo os pontos azuis restantes" style="width: 290px;">
+            <h1>Olá. Eu sou o Joel, bem-vindo</h1>
+        </header>
+        <main>
+            <div class="content-frame">
+                <h2>Sobre Mim</h2>
+                <p>Apixonado por estatísticas e dados, tenho tido sucesso na gestão de procedimentos analíticos. Minha jornada se estende pela academia, aprendizado autodidata
+                    e ambientes corporativos, onde realizei uma ampla gama de projetos. Fique à vontade para dar uma olhada em scripts com análises estatísticas
+                    e técnicas de visualização de dados.</p>
+            </div>
+            <div class="content-frame">
+                <h2>Projetos</h2>
+                <ul>
+                    <li class="project">
+                        <h3>Simulação da Ionosfera</h3>
+                        <div class="expand-icon" onclick="toggleContent(this)">+</div>
+                        <!-- Conteúdo do projeto a ser expandido -->
+                        <div class="project-content">
+                            <p>Este código demonstra as habilidades de tratamento de dados para:<br>
+                                <strong>Limpeza de Dados:</strong> Ele lê e processa eficientemente dados de arquivos externos, lidando com valores ausentes ou incompletos
+                                através do preenchimento de linhas.<br>
+                                <strong>Manipulação de Arrays:</strong> Ele utiliza arrays NumPy para remodelar e manipular dados, facilitando operações como
+                                indexação e fatiamento para estruturas de dados multidimensionais. <br>
+                                <strong>Análise Estatística e Cálculo:</strong> Ele realiza cálculos estatísticos como média e diferença para
+                                derivar parâmetros essenciais para análises adicionais.<br>
+                                <strong>Visualização:</strong> Através do Matplotlib, ele cria gráficos visualmente informativos, aplicando mapeamento de cores e normalização logarítmica
+                                para representar dados de densidade de forma eficaz.</p>
+                            <iframe width="360" height="175" src="https://www.youtube.com/embed/0l1yfuRu1uo" frameborder="0" allowfullscreen></iframe>
+                            <!-- Link para o script em Python -->
+                            <p>Link para o script em Python: <a href="Color_map_do_Sami2_Variando_no_t.py">Color_map_do_Sami2_Variando_no_t.py</a></p>                
                         </div>
-                        <p>As Figuras acima nos contam a seguinte história:<br>
-                            1-Estado inicial com 3 partículas contidas (pontos vermelhos = infectados e pontos azuis = não infectados)<br>
-                            2-Um segundo estágio com o surto em andamento (agora os pontos verdes são as partículas que se recuperaram da doença)<br>
-                            3-Agora a fase final está chegando, onde os pontos recuperados (em verde) criam uma 'imunidade de rebanho' protegendo os pontos azuis restantes.</p>
-                        <p>Link para o código principal: : <a href="https://github.com/JAPine/Recent-Works/blob/main/PropDoen.py">PropDoen.py</a><br>
-                        Link para o código Dynamics: <a href="https://github.com/JAPine/Recent-Works/blob/main/Dynamic.py">Dynamics.py</a></p>
-                    </div>
-                </li>
-                <li class="project">
-                    <h3>Análise do PIB Brasileiro ao Longo dos Anos</h3>
-                    <div class="expand-icon" onclick="toggleContent(this)">+</div>
-                    <div class="project-content">
-                        <div class="image-container">
-                            <img src="Per_Region_bar.png" alt="()" style="width: 890px; display: block;"><br>
-                            <img src="Sector_over_years.png" alt=" ()" style="width: 860px; display: block;">
-                        </div>
-                        <p>Esta é uma análise descritiva e diagnóstica que fiz sobre o PIB brasileiro ao longo dos anos de 1985 até 2020. 
-                            Os dados foram obtidos do IBGE através do banco de dados 'basedosdados' no BigQuery.<br>
-                            <strong>Carregamento e Limpeza de Dados:</strong> O código carrega vários arquivos CSV, os concatena e remove duplicatas. <br
-
-2/2
-        <!-- Portuguese content goes here -->
-    </div>    
+                    </li>
+                    <!-- Adicione mais itens de projeto conforme necessário -->
+                </ul>
+            </div>
+        </main>
+    </div>
     <footer>
         <p>&copy; 2024 Joel's Portfolio <br>Email:joanfepi9@gmail.com</p>
     </footer>
-        
-    
 
     <script>
         function toggleContent(icon) {
             var project = icon.closest('.project');
             project.classList.toggle('expanded');
+        }
+
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                document.getElementById('content-en').style.display = 'block';
+                document.getElementById('content-pt').style.display = 'none';
+            } else if (lang === 'pt') {
+                document.getElementById('content-en').style.display = 'none';
+                document.getElementById('content-pt').style.display = 'block';
+            }
         }
     </script>
 </body>
