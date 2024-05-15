@@ -103,7 +103,7 @@ footer {
 }
 
 .image-container {
-    display: flex;
+    display: block;
     justify-content: space-between;
     margin-bottom: 20px;
 }
